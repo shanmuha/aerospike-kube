@@ -10,10 +10,9 @@ Build and push the aerospike-install container to the Docker registry of your ch
 
 Use the aerospike-install image as the init-container for the PetSet
 
-Deploy the petset: `kubectl create -f aerospike-petset.yaml`
+Deploy the petset: `kubectl create -f aerospike-statefulset.yaml`
 
 ## Requirements
 
-* Kubernetes 1.3+ with alpha features (PetSet, init containers)
-* Kubernetes DNS add-in
+* Kubernetes 1.5+ with beta features (PetSet, init containers)
 

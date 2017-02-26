@@ -10,12 +10,11 @@ Build the container with `docker build -t <YOUR_DOCKER_REGISTRY>/aerospike-insta
 
 Push the container to your docker registry: `docker push <YOUR_DOCKER_REGISTRY>/aerospike/install`
 
-Use this container in your kubernetes Aerospike PetSet (see Example)
+Use this container in your kubernetes Aerospike Stateful Set (see Example)
 
 ## Requirements
 
-* Kubernetes 1.3+ with alpha features (PetSet, init containers)
-* Kubernetes DNS add-in
+* Kubernetes 1.5+ with beta features (Stateful Set, init containers)
 
 ## Parameters:
 
@@ -26,7 +25,7 @@ Use this container in your kubernetes Aerospike PetSet (see Example)
 
 ## Example
 
-In your kubernetes PetSet yaml:
+In your kubernetes StatefulSet yaml:
 
 ```
 spec:
